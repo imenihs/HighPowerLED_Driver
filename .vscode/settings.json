@@ -1,0 +1,10 @@
+{
+	"cortex-debug.variableUseNaturalFormat": true,
+	"files.associations": {
+		"*.php": "php",
+		"stm32f1xx_hal.h": "c",
+		"font.h": "c",
+		"ssd1306.h": "c",
+		"string.h": "c"
+	}
+}
