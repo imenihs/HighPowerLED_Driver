@@ -50,6 +50,15 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
 )
 
+# .cppのソースファイルを自動検知してコンパイル対象に追加する
+file(GLOB SRC_FILES CONFIGURE_DEPENDS
+    Core/Src/*.c
+)
+target_sources(${CMAKE_PROJECT_NAME} PRIVATE
+    ${SRC_FILES}
+
+)
+
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
